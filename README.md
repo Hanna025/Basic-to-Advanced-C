@@ -5,7 +5,7 @@ The C programs are in the three file format viz Header , Implementation and Appl
 
 Dont forget to include the header files of your programs in the implementation and application files.
 
-Execute the program like for eg :
+Execute the program like for eg if your makefile looks like this ->
 
 SI.exe : SIimp.o  SIapp.o
         cc -o SI.exe  SIimp.o  SIapp.o
