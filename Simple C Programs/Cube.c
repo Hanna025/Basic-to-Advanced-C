@@ -10,9 +10,9 @@ int cube(int);
 
 int cube(int a)
 {
-int volume;
-volume = a*a*a;
-return volume;
+ 	int volume;
+	volume = a*a*a;
+	return volume;
 }
 
 //cubeapp.c
@@ -20,11 +20,11 @@ return volume;
 #include "head.h"
 int main()
 {
-int c,res;
-printf("enter the value for c\n");
-scanf("%d",&c);
-res=cube(c);
-printf("volume of the cube is %d",res);
+	int c,res;
+	printf("enter the value for c\n");
+	scanf("%d",&c);
+	res=cube(c);
+	printf("volume of the cube is %d",res);
 }
 
 //makefile
