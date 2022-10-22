@@ -1,7 +1,6 @@
 //Header File
 //SIHead.h
 #include<stdio.h>
-
 float SI(float,float,float);
 
 //Implemetation File
@@ -10,24 +9,24 @@ float SI(float,float,float);
 
 float SI ( float a, float b, float c)
 {
-float res;
-res=(a*b*c)/100;
-return res;
+        float res;
+        res=(a*b*c)/100;
+        return res;
 }
 
 //App File
 #include"head.h"
 int main()
 {
-float p,n,r,result;
-printf("enter the value for p,n,r\n");
-scanf("%f%f%f",&p,&n,&r);
-result= SI(p,n,r);
-printf("SI is %f",result);
+        float p,n,r,result;
+        printf("enter the value for p,n,r\n");
+        scanf("%f%f%f",&p,&n,&r);
+        result= SI(p,n,r);
+        printf("SI is %f",result);
 
 }
 
-Makefile
+//makefile
 SI.exe : SIimp.o  SIapp.o
         cc -o SI.exe  SIimp.o  SIapp.o
 SIimp.o: SIimp.c
