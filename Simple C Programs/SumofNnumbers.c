@@ -6,25 +6,27 @@ int sum();
 #include"SumHead.h"
 int sum(int n)
 {
-int i=1,sum=0;
-do
-{
-sum=sum+i;
-i=i+1;
-}
-while (i<=n);
+        int i=1,sum=0;
+        do
+        {
+                sum=sum+i;
+                i=i+1;
+        }
+        while (i<=n);
 return sum;
 }
+
 //SumApp.c
 #include"SumHead.h"
 int main()
 {
-int res,a;
-printf("Enter the value for a\n");
-scanf("%d",&a);
-res=sum(a);
-printf("The sum is %d",res);
+        int res,a;
+        printf("Enter the value for a\n");
+        scanf("%d",&a);
+        res=sum(a);
+        printf("The sum is %d",res);
 }
+
 //makefile
 Sum.exe:SumImp.o SumApp.o
         cc -o Sum.exe SumImp.o SumApp.o
